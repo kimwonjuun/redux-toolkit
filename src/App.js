@@ -1,25 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+// Redux toolkit 의 등장.
+// 1. 설정할 게 너무 많음.
+// 2. 미들웨어 설치.
+// 3. 반복되는 코드.
+// 4. 불변성 유지의 어려움.
+
+function Counter() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <button>+</button>0
     </div>
   );
+}
+function App() {
+  return <Counter />;
 }
 
 export default App;
